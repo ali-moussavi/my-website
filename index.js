@@ -41,6 +41,7 @@ const removeUnnecessaryClassesHandler = (currentPage, targetPage) => {
 };
 
 function changePageHandler() {
+	window.location.hash = event.target.dataset.classname;
 	const currentPage = document.querySelector('.currentPage');
 	let pageNum = event.target.dataset.page;
 	if (pageNum < currentPage.dataset.page) {
