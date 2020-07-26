@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="/queries.css">
     <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/650e805292.js" crossorigin="anonymous" defer></script>
     <title>Ali Moussavi</title>
 </head>
 
 <body>
     <header class="navbar">
-        <div class="logo">logo</div>
-        <div>
-            <ul class="navbar__items">
-                <li class="navbar__items--item navbar__items--home" id="aboutMe" data-page="1" data-classname='about'>
-                    About me</li>
-                <li class="navbar__items--item navbar__items--skills" id="mySkills" data-page="2"
-                    data-classname='skills'>My skills
-                </li>
-                <li class="navbar__items--item navbar__items--projects" id="myProjects" data-page="3"
-                    data-classname='projects'>My
-                    projects</li>
-                <li class="navbar__items--item navbar__items--contact" id="contactMe" data-page="4"
-                    data-classname='contact'>Contact
-                    me</li>
-            </ul>
+        <div class="logo">
+            <i class="fas fa-laptop-code gradient-text"></i>
+            <div class="logo-text">
+                <div style="font-size: 1.5rem; margin-top: -.1rem;">Ali Moussavi</div>
+                <div style="font-size: 1rem; margin-top: -.4rem;">Web Dev</div>
+            </div>
         </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="navbar__items">
+            <li class="navbar__items--item navbar__items--home" id="aboutMe" data-page="1" data-classname='about'>
+                About me</li>
+            <li class="navbar__items--item navbar__items--skills" id="mySkills" data-page="2" data-classname='skills'>My
+                skills
+            </li>
+            <li class="navbar__items--item navbar__items--projects" id="myProjects" data-page="3"
+                data-classname='projects'>My
+                projects</li>
+            <li class="navbar__items--item navbar__items--contact" id="contactMe" data-page="4"
+                data-classname='contact'>Contact
+                me</li>
+        </ul>
+
     </header>
     <main>
         <div class="container">
@@ -35,17 +46,31 @@
                 <div class="pagesCube__content pagesCube__content--about currentPage" data-page="1">
                     <div class="pageContainer">
                         <div class="about-me-container">
-                            <h3 class="text-secondary">Hi, I'm</h3>
-                            <h1 class="text-primary">ALI MOUSSAVI</h1>
-                            <h3 class="text-secondary">I am a</h3>
-                            <h1 class="text-primary">FULLSTACK DEVELOPER</h1>
-                            <div>
-                                <div class="btn btn-primary">my projects</div>
+                            <div class="fluid-container">
+                                <h3 class="text-secondary">Hi, I'm</h3>
+                                <h1 class="text-primary">ALI MOUSSAVI</h1>
+                                <h3 class="text-secondary">I am a</h3>
+                                <h1 class="text-primary">WEB DEVELOPER</h1>
+                                <div class="btn-container">
+                                    <div class="btn-wrapper hvr-grow-shadow">
+                                        <button type="button" id="projects-btn" data-page="3" data-classname='projects'
+                                            class="btn btn-primary hvr-grow-shadow">my
+                                            projects
+                                        </button>
+                                    </div>
+                                    <div class="btn-wrapper hvr-grow-shadow">
+                                        <button type="button"
+                                            class="btn btn-secondary hvr-grow-shadow hvr-bounce-to-right" data-page="2"
+                                            data-classname='skills' id="my-skills-btn">my skills
+                                        </button>
+                                    </div>
+
+                                </div>
                             </div>
+
                         </div>
-                        <div>
-                            <img src="/assets/images/Programming-amico.png"
-                                style="margin-top: 3rem; height: 25rem; width: 25rem;" alt="">
+                        <div class="header-image-container">
+                            <img src="/assets/images/Programming-amico.png" style="width:100%;" alt="">
                         </div>
                     </div>
                 </div>
@@ -63,6 +88,13 @@
 
         </div>
     </main>
+    <footer>
+        <div class="footer-icons">
+            <i class="fab fa-github"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-whatsapp"></i>
+        </div>
+    </footer>
 
 
 </body>

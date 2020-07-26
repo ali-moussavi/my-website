@@ -10,6 +10,25 @@ myProjects.addEventListener('click', changePageHandler);
 const contactMe = document.getElementById('contactMe');
 contactMe.addEventListener('click', changePageHandler);
 
+const myskillsBtn = document.getElementById('my-skills-btn');
+myskillsBtn.addEventListener('click', changePageHandler);
+
+const myprojectsBtn = document.getElementById('projects-btn');
+myprojectsBtn.addEventListener('click', changePageHandler);
+
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+	const navbar__items = document.querySelector('.navbar__items');
+	//Animate Links
+	navbar__items.classList.toggle('open');
+	//  links.forEach(link => {
+	// 	 link.classList.toggle("fade");
+	//  });
+
+	//Hamburger Animation
+	hamburger.classList.toggle('toggle');
+});
+
 const gotoRightPage = (currentPage, targetPageClassname) => {
 	currentPage.classList.add('exitToLeft');
 	currentPage.classList.remove('currentPage');

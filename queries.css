@@ -1,20 +1,91 @@
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
+	html,
 	body {
 		font-size: 18px;
+	}
+
+	.about-me-container {
+		flex-basis: 40vw;
+		padding-left: 2rem;
+	}
+
+	.header-image-container {
+		flex-basis: 60vw;
 	}
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+	html,
 	body {
 		font-size: 15px;
+	}
+
+	.pageContainer {
+		flex-wrap: wrap-reverse;
+	}
+
+	.about-me-container {
+		flex-basis: 100vw;
+	}
+
+	.header-image-container {
+		flex-basis: 70vw;
+	}
+
+	.hamburger {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		flex-direction: column;
+		cursor: pointer;
+		right: 5%;
+		top: 70%;
+		transform: translate(-5%, -50%);
+		z-index: 2;
+		transition: all 0.7s ease;
+	}
+	.navbar__items {
+		position: fixed;
+		justify-content: center;
+		align-items: center;
+		background: #ffffff;
+		top: -10px;
+		right: 0;
+		height: 300px;
+		width: 300px;
+		flex-direction: column;
+		clip-path: circle(0px at 100% 0%);
+		-webkit-clip-path: circle(0px at 100% 0%);
+		transition: all .6s ease-out;
+		pointer-events: none;
+	}
+
+	.navbar__items li {
+		margin-left: 40px;
+	}
+	.navbar__items.open {
+		clip-path: circle(300px at 100% 0%);
+		-webkit-clip-path: circle(300px at 100% 0%);
+		pointer-events: all;
 	}
 }
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+	html,
 	body {
-		font-size: 14px;
+		font-size: 13px;
+	}
+
+	.header-image-container {
+		flex-basis: 100vw;
+	}
+
+	.about-me-container {
+		padding: 0px;
+		flex-basis: 100vw;
 	}
 }
