@@ -59,6 +59,16 @@ h3 {
 	display: none;
 }
 
+.text-primary {
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .text-secondary {
 	color: #757575;
 }
@@ -110,16 +120,6 @@ button:visited {
 	font-size: .8rem;
 	color: rgba(16, 117, 98, 1);
 	background-color: #fff;
-}
-
-.text-primary {
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
 .btn-container {
@@ -264,8 +264,7 @@ button:visited {
 }
 
 .header-image-container {
-	flex-basis: 50vw;
-	max-width: 570px;
+	flex-basis: 40vw;
 }
 
 .pagesCube__content--about {
@@ -311,17 +310,43 @@ footer {
 }
 
 .footer-icons {
-	display: inline-block;
-	color: #16a085;
+	display: inline-flex;
+	align-items: flex-end;
+	color: white;
 	font-size: 2rem;
-	background-color: rgba(128, 128, 128, 0.144);
-	border-radius: 5px 5px 0 0;
-	padding: 0 .25rem;
-	box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.3);
+}
+.footer-icons i {
+	cursor: pointer;
+	transition: all .3s;
 }
 
-.footer-icons i {
-	margin: .25rem;
+.footer-icons i:nth-child(1) {
+	padding: .5rem .6rem;
+	background-color: #4e545a;
+	border-radius: 8px 0px 0px 0px;
+}
+
+.footer-icons i:nth-child(2) {
+	padding: .5rem .7rem;
+	background-color: #0077ba;
+}
+
+.footer-icons i:nth-child(3) {
+	background-color: #4fce5d;
+	padding: .5rem .7rem;
+	border-radius: 0px 8px 0px 0px;
+}
+
+.footer-icons i:nth-child(1):hover {
+	padding-bottom: 2rem;
+}
+
+.footer-icons i:nth-child(2):hover {
+	padding-bottom: 2rem;
+}
+
+.footer-icons i:nth-child(3):hover {
+	padding-bottom: 2rem;
 }
 
 @keyframes cubeLeftOut {
