@@ -42,7 +42,6 @@ const removeUnnecessaryClassesHandler = (currentPage, targetPage) => {
 };
 
 function changePageHandler(targetPageNum) {
-	// window.location.hash = event.target.dataset.classname;
 	const currentPage = document.querySelector('.currentPage');
 	if (targetPageNum < currentPage.dataset.page) {
 		gotoLeftPage(currentPage, window.location.hash.slice(1));
@@ -76,4 +75,18 @@ const hashChangeHandler = () => {
 	changePageHandler(pageNum);
 };
 
+const initialLoad = () => {
+	let pageId;
+	if (window.location.hash) {
+		pageId = window.location.hash.slice(1) + 'Page';
+	} else {
+		pageId = 'aboutPage';
+	}
+
+	const pageContainer = document.getElementById(pageId);
+	pageContainer.classList.remove('display-none');
+	pageContainer.classList.add('currentPage');
+};
+
+initialLoad();
 window.onhashchange = hashChangeHandler;
