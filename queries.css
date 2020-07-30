@@ -1,3 +1,19 @@
+/* from 1024px to 1200px */
+@media only screen and (max-width: 1200px) {
+	.frontend-skills-container,
+	.backend-skills-container,
+	.other-skills-container {
+		flex-basis: 45vw;
+		margin-bottom: 20%;
+		margin-top: 10%;
+	}
+
+	.other-skills-container {
+		margin-bottom: 0px;
+		margin-top: -5%;
+	}
+}
+
 /* Small tablet to big tablet: from 768px to 1023px */
 @media only screen and (max-width: 1023px) {
 	html,
@@ -70,6 +86,25 @@
 		clip-path: circle(300px at 100% 0%);
 		-webkit-clip-path: circle(300px at 100% 0%);
 		pointer-events: all;
+	}
+
+	.skills-page-container {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.frontend-skills-container,
+	.backend-skills-container,
+	.other-skills-container {
+		flex-basis: 90vw;
+		margin-bottom: 0%;
+		margin-top: 6rem;
+		min-height: 200px;
+	}
+
+	.other-skills-container {
+		margin-bottom: 5rem;
 	}
 }
 

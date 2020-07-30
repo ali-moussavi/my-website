@@ -1,21 +1,3 @@
-const aboutMe = document.getElementById('aboutMe');
-aboutMe.addEventListener('click', changePageHandler);
-
-const mySkills = document.getElementById('mySkills');
-mySkills.addEventListener('click', changePageHandler);
-
-const myProjects = document.getElementById('myProjects');
-myProjects.addEventListener('click', changePageHandler);
-
-const contactMe = document.getElementById('contactMe');
-contactMe.addEventListener('click', changePageHandler);
-
-const myskillsBtn = document.getElementById('my-skills-btn');
-myskillsBtn.addEventListener('click', changePageHandler);
-
-const myprojectsBtn = document.getElementById('projects-btn');
-myprojectsBtn.addEventListener('click', changePageHandler);
-
 const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', () => {
 	const navbar__items = document.querySelector('.navbar__items');
@@ -38,7 +20,7 @@ const gotoRightPage = (currentPage, targetPageClassname) => {
 	);
 	targetPage.classList.add('enterFromRight', 'currentPage');
 	targetPage.classList.remove('display-none');
-	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 700);
+	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 676);
 };
 
 const gotoLeftPage = (currentPage, targetPageClassname) => {
@@ -49,7 +31,7 @@ const gotoLeftPage = (currentPage, targetPageClassname) => {
 	);
 	targetPage.classList.add('enterFromLeft', 'currentPage');
 	targetPage.classList.remove('display-none');
-	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 700);
+	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 676);
 };
 
 const removeUnnecessaryClassesHandler = (currentPage, targetPage) => {
@@ -59,13 +41,39 @@ const removeUnnecessaryClassesHandler = (currentPage, targetPage) => {
 	targetPage.classList.remove('enterFromRight', 'enterFromLeft');
 };
 
-function changePageHandler() {
-	window.location.hash = event.target.dataset.classname;
+function changePageHandler(targetPageNum) {
+	// window.location.hash = event.target.dataset.classname;
 	const currentPage = document.querySelector('.currentPage');
-	let pageNum = event.target.dataset.page;
-	if (pageNum < currentPage.dataset.page) {
-		gotoLeftPage(currentPage, event.target.dataset.classname);
-	} else if (pageNum > currentPage.dataset.page) {
-		gotoRightPage(currentPage, event.target.dataset.classname);
+	if (targetPageNum < currentPage.dataset.page) {
+		gotoLeftPage(currentPage, window.location.hash.slice(1));
+	} else if (targetPageNum > currentPage.dataset.page) {
+		gotoRightPage(currentPage, window.location.hash.slice(1));
 	}
 }
+
+const hashChangeHandler = () => {
+	let pageNum;
+	switch (window.location.hash) {
+		case '':
+			pageNum = '1';
+			window.location.hash = 'about';
+			break;
+		case '#about':
+			pageNum = '1';
+			break;
+		case '#skills':
+			pageNum = '2';
+			break;
+		case '#projects':
+			pageNum = '3';
+			break;
+		case '#contact':
+			pageNum = '4';
+		default:
+			break;
+	}
+
+	changePageHandler(pageNum);
+};
+
+window.onhashchange = hashChangeHandler;

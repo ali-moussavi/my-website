@@ -27,16 +27,19 @@
         </div>
         <ul class="navbar__items">
             <li class="navbar__items--item navbar__items--home" id="aboutMe" data-page="1" data-classname='about'>
-                About me</li>
-            <li class="navbar__items--item navbar__items--skills" id="mySkills" data-page="2" data-classname='skills'>My
-                skills
+                <a href="#about"> About me</a>
+            </li>
+            <li class="navbar__items--item navbar__items--skills" id="mySkills" data-page="2" data-classname='skills'>
+                <a href="#skills">My skills</a>
             </li>
             <li class="navbar__items--item navbar__items--projects" id="myProjects" data-page="3"
-                data-classname='projects'>My
-                projects</li>
+                data-classname='projects'>
+                <a href="#projects"> My projects</a>
+            </li>
             <li class="navbar__items--item navbar__items--contact" id="contactMe" data-page="4"
-                data-classname='contact'>Contact
-                me</li>
+                data-classname='contact'>
+                <a href="#contact"> Contact me</a>
+            </li>
         </ul>
 
     </header>
@@ -53,16 +56,21 @@
                                 <h1>WEB DEVELOPER</h1>
                                 <div class="btn-container">
                                     <div class="btn-wrapper hvr-grow-shadow">
-                                        <button type="button" id="projects-btn" data-page="3" data-classname='projects'
-                                            class="btn btn-primary hvr-grow-shadow">my
-                                            projects
-                                        </button>
+                                        <a href="#projects">
+                                            <button type="button" id="projects-btn" data-page="3"
+                                                data-classname='projects' class="btn btn-primary hvr-grow-shadow">my
+                                                projects
+                                            </button>
+                                        </a>
+
                                     </div>
                                     <div class="btn-wrapper hvr-grow-shadow">
-                                        <button type="button"
-                                            class="btn btn-secondary hvr-grow-shadow hvr-bounce-to-right" data-page="2"
-                                            data-classname='skills' id="my-skills-btn">my skills
-                                        </button>
+                                        <a href="#skills">
+                                            <button type="button"
+                                                class="btn btn-secondary hvr-grow-shadow hvr-bounce-to-right"
+                                                data-page="2" data-classname='skills' id="my-skills-btn">my skills
+                                            </button>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -76,7 +84,7 @@
                     </div>
                 </div>
                 <div class="pagesCube__content pagesCube__content--skills display-none" data-page="2">
-                    <div class="pageContainer">
+                    <div class="pageContainer skills-page-container">
 
                         <div class="frontend-skills-container">
                             <!-- <div
@@ -145,19 +153,18 @@
 
                         <div class="other-skills-container">
                             <div class="other-skills">Other <br> Skills</div>
-                            <div class="backend-skills-item">
-                                <div><i class="fab fa-node"></i></div>
+                            <div class="other-skills-item">
+                                <i class="fab fa-github" style="margin-bottom: .3rem;"></i>
                                 <div>Git</div>
                             </div>
-                            <div class="backend-skills-item">
-                                <div><img src="./assets/images/express-js-.svg" alt="express-logo"
+                            <div class="other-skills-item">
+                                <div><img src="./assets/images/responsive.svg" alt="responsive-design"
                                         style="height: 1.6rem;">
                                 </div>
                                 <div>Responsive<br>Design</div>
                             </div>
-                            <div class="backend-skills-item">
-                                <div><img src="./assets/images/icons8-mysql-logo.svg" alt="mysql-logo"
-                                        style="height: 2.5rem; margin-bottom: -.4rem;"></div>
+                            <div class="other-skills-item">
+                                <div><img src="./assets/images/c.svg" alt="C++-logo" style="height: 2rem;"></div>
                                 <div>C++</div>
                             </div>
                         </div>

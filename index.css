@@ -54,6 +54,11 @@ li {
 	list-style: none;
 }
 
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
 h1,
 h2,
 h3 {
@@ -293,6 +298,10 @@ button:visited {
 
 /* SKILLS PAGE */
 
+.skills-page-container {
+	flex-wrap: wrap;
+}
+
 .frontend-skills-container,
 .backend-skills-container,
 .other-skills-container {
@@ -321,7 +330,8 @@ button:visited {
 }
 
 .frontend-skills-item,
-.backend-skills-item {
+.backend-skills-item,
+.other-skills-item {
 	background-color: white;
 	height: 5rem;
 	width: 5rem;
@@ -334,8 +344,7 @@ button:visited {
 	border-radius: 50%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
 
-	transition: all .5s 2s;
-	backface-visibility: hidden;
+	transition: all .5s .5s;
 }
 
 .frontend-skills-item:nth-child(2) {
@@ -367,7 +376,8 @@ button:visited {
 }
 
 .frontend-skills-item i,
-.backend-skills-item i {
+.backend-skills-item i,
+.other-skills-item i {
 	font-size: 1.5rem;
 	color: #1abc9c;
 }
@@ -392,6 +402,18 @@ button:visited {
 	transform: translateY(-2rem) translateX(-6.18rem);
 }
 
+.other-skills-item:nth-child(2) {
+	transform: translateY(-6.5rem);
+}
+
+.other-skills-item:nth-child(3) {
+	transform: translateY(3.25rem) translateX(5.63rem);
+}
+
+.other-skills-item:nth-child(4) {
+	transform: translateY(3.25rem) translateX(-5.63rem);
+}
+
 /* .frontend-skills-item:nth-child(3) {
 	transform: rotate(102deg);
 } */
@@ -400,14 +422,11 @@ button:visited {
 }
 
 .pagesCube__content--skills {
-	background-color: rgb(219, 63, 63);
 }
 
 .pagesCube__content--projects {
-	background-color: rgb(83, 136, 216);
 }
 .pagesCube__content--contact {
-	background-color: rgb(159, 89, 224);
 }
 
 .exitToLeft {
