@@ -1,3 +1,27 @@
+const frontendStylesArray = [
+	'transform: translateY(-6.5rem);',
+	'transform: translateY(-4.09rem) translateX(5.05rem);',
+	'transform: translateY(1.35rem) translateX(6.357rem);',
+	'transform: translateY(5.86rem) translateX(2.82rem);',
+	'transform: translateY(5.86rem) translateX(-2.82rem);',
+	'transform: translateY(1.35rem) translateX(-6.357rem);',
+	'transform: translateY(-4.09rem) translateX(-5.05rem);'
+];
+
+const backendStylesArray = [
+	'transform: translateY(-6.5rem);',
+	'transform: translateY(-2rem) translateX(6.18rem);',
+	'transform: translateY(5.26rem) translateX(3.82rem);',
+	'transform: translateY(5.26rem) translateX(-3.82rem);',
+	'transform: translateY(-2rem) translateX(-6.18rem);'
+];
+
+const otherSkillsStylesArray = [
+	'transform: translateY(-6.5rem);',
+	'transform: translateY(3.25rem) translateX(5.63rem);',
+	'transform: translateY(3.25rem) translateX(-5.63rem);'
+];
+
 const hamburger = document.querySelector('.hamburger');
 hamburger.addEventListener('click', () => {
 	const navbar__items = document.querySelector('.navbar__items');
@@ -62,6 +86,11 @@ const hashChangeHandler = () => {
 			break;
 		case '#skills':
 			pageNum = '2';
+			setTimeout(() => {
+				showSkills(frontendStylesArray, 'frontend');
+				showSkills(backendStylesArray, 'backend');
+				showSkills(otherSkillsStylesArray, 'other');
+			}, 200);
 			break;
 		case '#projects':
 			pageNum = '3';
@@ -83,9 +112,24 @@ const initialLoad = () => {
 		pageId = 'aboutPage';
 	}
 
+	if (window.location.hash == '#skills') {
+		setTimeout(() => {
+			showSkills(frontendStylesArray, 'frontend');
+			showSkills(backendStylesArray, 'backend');
+			showSkills(otherSkillsStylesArray, 'other');
+		}, 200);
+	}
+
 	const pageContainer = document.getElementById(pageId);
 	pageContainer.classList.remove('display-none');
 	pageContainer.classList.add('currentPage');
+};
+
+const showSkills = (stylesArray, skillName) => {
+	const Container = document.querySelector(`.${skillName}-skills-container`);
+	for (let i = 1; i < Container.children.length; i++) {
+		Container.children[i].style.cssText = stylesArray[i - 1];
+	}
 };
 
 initialLoad();

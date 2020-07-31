@@ -347,76 +347,12 @@ button:visited {
 	transition: all .5s .5s;
 }
 
-.frontend-skills-item:nth-child(2) {
-	transform: translateY(-6.5rem);
-}
-
-.frontend-skills-item:nth-child(3) {
-	transform: translateY(-4.09rem) translateX(5.05rem);
-}
-
-.frontend-skills-item:nth-child(4) {
-	transform: translateY(1.35rem) translateX(6.357rem);
-}
-
-.frontend-skills-item:nth-child(5) {
-	transform: translateY(5.86rem) translateX(2.82rem);
-}
-
-.frontend-skills-item:nth-child(6) {
-	transform: translateY(5.86rem) translateX(-2.82rem);
-}
-
-.frontend-skills-item:nth-child(7) {
-	transform: translateY(1.35rem) translateX(-6.357rem);
-}
-
-.frontend-skills-item:nth-child(8) {
-	transform: translateY(-4.09rem) translateX(-5.05rem);
-}
-
 .frontend-skills-item i,
 .backend-skills-item i,
 .other-skills-item i {
 	font-size: 1.5rem;
 	color: #1abc9c;
 }
-
-.backend-skills-item:nth-child(2) {
-	transform: translateY(-6.5rem);
-}
-
-.backend-skills-item:nth-child(3) {
-	transform: translateY(-2rem) translateX(6.18rem);
-}
-
-.backend-skills-item:nth-child(4) {
-	transform: translateY(5.26rem) translateX(3.82rem);
-}
-
-.backend-skills-item:nth-child(5) {
-	transform: translateY(5.26rem) translateX(-3.82rem);
-}
-
-.backend-skills-item:nth-child(6) {
-	transform: translateY(-2rem) translateX(-6.18rem);
-}
-
-.other-skills-item:nth-child(2) {
-	transform: translateY(-6.5rem);
-}
-
-.other-skills-item:nth-child(3) {
-	transform: translateY(3.25rem) translateX(5.63rem);
-}
-
-.other-skills-item:nth-child(4) {
-	transform: translateY(3.25rem) translateX(-5.63rem);
-}
-
-/* .frontend-skills-item:nth-child(3) {
-	transform: rotate(102deg);
-} */
 
 .pagesCube__content--about {
 }
