@@ -26,20 +26,23 @@
             <div class="line3"></div>
         </div>
         <ul class="navbar__items">
-            <li class="navbar__items--item navbar__items--home" id="aboutMeNav" data-page="1" data-classname='about'>
+            <li class="navbar__items--item navbar__items--home" id="aboutNav" data-page="1" data-classname='about'>
                 <a href="#about"> About me</a>
+                <div class="navbar-item-deactive"></div>
             </li>
-            <li class="navbar__items--item navbar__items--skills" id="mySkillsNav" data-page="2"
-                data-classname='skills'>
+            <li class="navbar__items--item navbar__items--skills" id="skillsNav" data-page="2" data-classname='skills'>
                 <a href="#skills">My skills</a>
+                <div class="navbar-item-deactive"></div>
             </li>
-            <li class="navbar__items--item navbar__items--projects" id="myProjectsNav" data-page="3"
+            <li class="navbar__items--item navbar__items--projects" id="projectsNav" data-page="3"
                 data-classname='projects'>
                 <a href="#projects"> My projects</a>
+                <div class="navbar-item-deactive"></div>
             </li>
-            <li class="navbar__items--item navbar__items--contact" id="contactMeNav" data-page="4"
+            <li class="navbar__items--item navbar__items--contact" id="contactNav" data-page="4"
                 data-classname='contact'>
                 <a href="#contact"> Contact me</a>
+                <div class="navbar-item-deactive"></div>
             </li>
         </ul>
 
@@ -49,6 +52,14 @@
             <div class="pagesCube">
                 <div class="pagesCube__content pagesCube__content--about display-none" id="aboutPage" data-page="1">
                     <div class="pageContainer">
+                        <div class="arrow-right">
+                            <div>
+                                <div class="arrow-handle rotate45deg"></div>
+                                <div class="arrow-handle rotate-45deg"></div>
+                                <a class="arrow-text" href="#skills">Skills</a>
+                            </div>
+
+                        </div>
                         <div class="about-me-container">
                             <div class="fluid-container">
                                 <h3 class="text-secondary">Hi, I'm</h3>
@@ -79,7 +90,7 @@
 
                         </div>
                         <div class="header-image-container">
-                            <img src="./assets/images/Programming-amico.png" style="width:100%;" alt="Programmer-img">
+                            <img src="./assets/images/Programming-amico.png" class="header-image" alt="Programmer-img">
                         </div>
 
                     </div>

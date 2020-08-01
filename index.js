@@ -74,7 +74,12 @@ function changePageHandler(targetPageNum) {
 	}
 }
 
-const hashChangeHandler = () => {
+const hashChangeHandler = (event) => {
+	const previousActiveNavItem = document.querySelector('.navbar-item-active');
+	previousActiveNavItem.classList.remove('navbar-item-active');
+	const currentActiveNavItem = document.querySelector(`${window.location.hash}Nav div`);
+	currentActiveNavItem.classList.add('navbar-item-active');
+
 	let pageNum;
 	switch (window.location.hash) {
 		case '':
@@ -90,7 +95,7 @@ const hashChangeHandler = () => {
 				showSkills(frontendStylesArray, 'frontend');
 				showSkills(backendStylesArray, 'backend');
 				showSkills(otherSkillsStylesArray, 'other');
-			}, 200);
+			}, 400);
 			break;
 		case '#projects':
 			pageNum = '3';
@@ -108,8 +113,14 @@ const initialLoad = () => {
 	let pageId;
 	if (window.location.hash) {
 		pageId = window.location.hash.slice(1) + 'Page';
+		const currentActiveNavItem = document.querySelector(
+			`${window.location.hash}Nav div`
+		);
+		currentActiveNavItem.classList.add('navbar-item-active');
 	} else {
 		pageId = 'aboutPage';
+		const currentActiveNavItem = document.querySelector(`#aboutNav div`);
+		currentActiveNavItem.classList.add('navbar-item-active');
 	}
 
 	if (window.location.hash == '#skills') {
@@ -117,7 +128,7 @@ const initialLoad = () => {
 			showSkills(frontendStylesArray, 'frontend');
 			showSkills(backendStylesArray, 'backend');
 			showSkills(otherSkillsStylesArray, 'other');
-		}, 200);
+		}, 400);
 	}
 
 	const pageContainer = document.getElementById(pageId);

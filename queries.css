@@ -8,6 +8,11 @@
 		margin-top: 10%;
 	}
 
+	.header-image {
+		width: 100%;
+		height: auto;
+	}
+
 	.other-skills-container {
 		margin-bottom: 0px;
 		margin-top: -5%;
@@ -122,5 +127,9 @@
 	.about-me-container {
 		padding: 0px;
 		flex-basis: 100vw;
+	}
+
+	.btn-container {
+		margin-bottom: 3rem;
 	}
 }
