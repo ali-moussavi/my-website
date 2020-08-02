@@ -464,6 +464,75 @@ button:visited {
 	color: #1abc9c;
 }
 
+/* Projects Page */
+.projects-page-container {
+	flex-direction: column;
+	justify-content: start;
+}
+
+.project-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5rem;
+	background-color: white;
+	margin: 1rem;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
+	border-radius: .6rem;
+}
+
+.project-container:nth-child(1) {
+	margin-top: 7%;
+}
+
+.project-container:nth-child(3) {
+	margin-bottom: 5rem;
+}
+
+.project-title {
+	font-size: 1.5rem;
+	padding-bottom: .5rem;
+	font-weight: 500;
+}
+
+.project-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project-img {
+	width: 20rem;
+	padding: .5rem;
+}
+
+.project-description {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	width: 15rem;
+}
+
+.about-project-title {
+	width: 10rem;
+	font-size: 1.1rem;
+	border-bottom: 2px solid #1abc9c;
+	margin: .4rem 0rem;
+}
+
+.main-text-description {
+	font-size: .8rem;
+	padding: .2rem 0rem;
+	text-align: left;
+}
+
+.project-btns {
+	margin-top: 1rem;
+}
+
 .pagesCube__content--about {
 }
 
@@ -515,32 +584,32 @@ footer {
 }
 
 .footer-icons i:nth-child(1) {
-	padding: .5rem .6rem;
+	padding: .4rem .5rem;
 	background-color: #4e545a;
 	border-radius: 8px 0px 0px 0px;
 }
 
 .footer-icons i:nth-child(2) {
-	padding: .5rem .7rem;
+	padding: .4rem .6rem;
 	background-color: #0077ba;
 }
 
 .footer-icons i:nth-child(3) {
 	background-color: #4fce5d;
-	padding: .5rem .7rem;
+	padding: .4rem .6rem;
 	border-radius: 0px 8px 0px 0px;
 }
 
 .footer-icons i:nth-child(1):hover {
-	padding-bottom: 2rem;
+	padding-bottom: 1.2rem;
 }
 
 .footer-icons i:nth-child(2):hover {
-	padding-bottom: 2rem;
+	padding-bottom: 1.2rem;
 }
 
 .footer-icons i:nth-child(3):hover {
-	padding-bottom: 2rem;
+	padding-bottom: 1.2rem;
 }
 
 /* Loader animation and styles */
@@ -553,7 +622,7 @@ footer {
 	height: 100%;
 	z-index: 3000;
 	background-color: #313131;
-	transition: transform 1.2s ease-in;
+	transition: transform .8s ease-in;
 }
 
 .loader-out {
@@ -689,14 +758,12 @@ footer {
 }
 .hvr-grow-shadow:hover {
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-	-webkit-transform: scale(1.05);
-	transform: scale(1.05);
 }
 
 .hvr-grow-shadow:active {
 	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
-	-webkit-transform: scale(1.05);
-	transform: translateY(3px) scale(1.05);
+
+	transform: translateY(3px);
 }
 
 /* Bounce To Right */

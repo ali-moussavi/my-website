@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
 	setTimeout(() => {
 		const loaderWrapper = document.getElementById('loader-wrapper');
 		loaderWrapper.classList.add('display-none');
-	}, 1300);
+	}, 1500);
 });
 
 const frontendStylesArray = [
