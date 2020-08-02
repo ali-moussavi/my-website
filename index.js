@@ -1,3 +1,12 @@
+window.addEventListener('load', () => {
+	const loaderWrapper = document.getElementById('loader-wrapper');
+	loaderWrapper.classList.add('loader-out');
+	setTimeout(() => {
+		const loaderWrapper = document.getElementById('loader-wrapper');
+		loaderWrapper.classList.add('display-none');
+	}, 1300);
+});
+
 const frontendStylesArray = [
 	'transform: translateY(-6.5rem);',
 	'transform: translateY(-4.09rem) translateX(5.05rem);',
