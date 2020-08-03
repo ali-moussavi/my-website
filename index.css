@@ -466,6 +466,7 @@ button:visited {
 
 /* Projects Page */
 .projects-page-container {
+	flex-wrap: nowrap !important;
 	flex-direction: column;
 	justify-content: start;
 }
@@ -477,7 +478,7 @@ button:visited {
 	align-items: center;
 	padding: 1.5rem;
 	background-color: white;
-	margin: 1rem;
+	margin: 1.5rem;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
 	border-radius: .6rem;
 }

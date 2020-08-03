@@ -17,6 +17,10 @@
 		margin-bottom: 0px;
 		margin-top: -5%;
 	}
+
+	projects-page-container {
+		flex-wrap: nowrap;
+	}
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
@@ -33,6 +37,10 @@
 
 	.header-image-container {
 		flex-basis: 60vw;
+	}
+
+	projects-page-container {
+		flex-wrap: nowrap;
 	}
 }
 
@@ -110,6 +118,14 @@
 
 	.other-skills-container {
 		margin-bottom: 5rem;
+	}
+
+	.project-info {
+		width: 18rem;
+	}
+
+	.project-container:nth-child(1) {
+		margin-top: 6rem;
 	}
 }
 
