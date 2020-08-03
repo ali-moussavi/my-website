@@ -53,7 +53,7 @@ const gotoRightPage = (currentPage, targetPageClassname) => {
 	);
 	targetPage.classList.add('enterFromRight', 'currentPage');
 	targetPage.classList.remove('display-none');
-	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 676);
+	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 803);
 };
 
 const gotoLeftPage = (currentPage, targetPageClassname) => {
@@ -64,7 +64,7 @@ const gotoLeftPage = (currentPage, targetPageClassname) => {
 	);
 	targetPage.classList.add('enterFromLeft', 'currentPage');
 	targetPage.classList.remove('display-none');
-	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 676);
+	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 803);
 };
 
 const removeUnnecessaryClassesHandler = (currentPage, targetPage) => {

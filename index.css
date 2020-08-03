@@ -546,22 +546,22 @@ button:visited {
 
 .exitToLeft {
 	transform-origin: 100% 50%;
-	animation: cubeLeftOut .675s ease-in both;
+	animation: cubeLeftOut .8s ease-in both;
 }
 
 .exitToRight {
 	transform-origin: 0% 50%;
-	animation: cubeRightOut .675s ease-in both;
+	animation: cubeRightOut .8s ease-in both;
 }
 
 .enterFromRight {
 	transform-origin: 0% 50%;
-	animation: cubeLeftIn .675s ease-in both;
+	animation: cubeLeftIn .8s ease-in both;
 }
 
 .enterFromLeft {
 	transform-origin: 100% 50%;
-	animation: cubeRightIn .675s ease-in both;
+	animation: cubeRightIn .8s ease-in both;
 }
 
 footer {
