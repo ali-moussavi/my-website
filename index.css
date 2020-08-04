@@ -26,6 +26,9 @@ body {
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
 	overflow-y: hidden;
+}
+
+body {
 	height: 100vh;
 }
 
