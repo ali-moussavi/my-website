@@ -88,6 +88,8 @@ const hashChangeHandler = (event) => {
 	previousActiveNavItem.classList.remove('navbar-item-active');
 	const currentActiveNavItem = document.querySelector(`${window.location.hash}Nav div`);
 	currentActiveNavItem.classList.add('navbar-item-active');
+	const navbar = document.querySelector('.navbar');
+	navbar.classList.remove('navbar-sticky');
 
 	let pageNum;
 	switch (window.location.hash) {
@@ -152,5 +154,21 @@ const showSkills = (stylesArray, skillName) => {
 	}
 };
 
+const onScroll = () => {
+	const navbar = document.querySelector('.navbar');
+	if (event.target.scrollTop > 80) {
+		navbar.classList.add('navbar-sticky');
+	} else {
+		navbar.classList.remove('navbar-sticky');
+	}
+};
+
 initialLoad();
 window.onhashchange = hashChangeHandler;
+
+const pageContainerArray = document.querySelectorAll('.pageContainer');
+
+pageContainerArray.forEach((pagecontainer) => {
+	console.log(pagecontainer);
+	pagecontainer.addEventListener('scroll', onScroll);
+});
