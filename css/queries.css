@@ -127,6 +127,10 @@
 	.project-container:nth-child(3) {
 		margin-top: 6rem;
 	}
+
+	.form-container {
+		width: 70vw;
+	}
 }
 
 /* Small phones: from 0 to 480px */
