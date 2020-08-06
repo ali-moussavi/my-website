@@ -176,13 +176,14 @@ h3 {
 }
 
 .text-primary {
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	font-weight: 500;
+	background: linear-gradient(90deg, rgb(21, 139, 118) 0%, rgb(28, 216, 178) 60%);
 	-webkit-background-clip: text;
+	background-clip: text;
+	background-size: 200% auto;
 	-webkit-text-fill-color: transparent;
+	animation: gradientMovingText 4s infinite forwards;
+	animation-delay: 3s;
 }
 
 .text-secondary {
@@ -494,8 +495,29 @@ button:visited {
 	transition: all .5s;
 }
 
-.frontend-skills-item:hover {
-	transform: scale(1.8);
+.skills-item-hover-container {
+	width: 0px;
+	height: 0px;
+	z-index: -100;
+}
+
+.skills-item-hover {
+	position: absolute;
+	top: 0;
+	background-color: #1abc9c25;
+	height: 5rem;
+	width: 5rem;
+	left: 0;
+	border-radius: 50%;
+	transform: scale(0);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+	transition: all .5s;
+}
+
+.frontend-skills-item:hover .skills-item-hover,
+.other-skills-item:hover .skills-item-hover,
+.backend-skills-item:hover .skills-item-hover {
+	transform: scale(1);
 }
 
 .frontend-skills-item i,
@@ -684,7 +706,6 @@ input:-webkit-autofill:active {
 }
 
 footer {
-	background-color: white;
 	display: flex;
 	justify-content: center;
 	position: absolute;
@@ -859,6 +880,24 @@ footer {
 	50% {
 		animation-timing-function: ease-in-out;
 		transform: translateX(-50%) translateZ(-100px) rotateY(-45deg);
+	}
+}
+
+@keyframes gradientMovingText {
+	/* 0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	} */
+
+	to {
+		background-position: 200% center;
 	}
 }
 

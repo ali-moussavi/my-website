@@ -51,6 +51,10 @@
 		font-size: 15px;
 	}
 
+	footer {
+		background-color: white;
+	}
+
 	.pageContainer {
 		flex-wrap: wrap-reverse;
 	}
