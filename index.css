@@ -684,6 +684,7 @@ input:-webkit-autofill:active {
 }
 
 footer {
+	background-color: white;
 	display: flex;
 	justify-content: center;
 	position: absolute;
