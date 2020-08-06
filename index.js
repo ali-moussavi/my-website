@@ -106,7 +106,7 @@ const hashChangeHandler = (event) => {
 				showSkills(frontendStylesArray, 'frontend');
 				showSkills(backendStylesArray, 'backend');
 				showSkills(otherSkillsStylesArray, 'other');
-			}, 400);
+			}, 800);
 			break;
 		case '#projects':
 			pageNum = '3';
@@ -139,7 +139,7 @@ const initialLoad = () => {
 			showSkills(frontendStylesArray, 'frontend');
 			showSkills(backendStylesArray, 'backend');
 			showSkills(otherSkillsStylesArray, 'other');
-		}, 400);
+		}, 1600);
 	}
 
 	const pageContainer = document.getElementById(pageId);

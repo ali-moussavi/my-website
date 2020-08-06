@@ -491,8 +491,11 @@ button:visited {
 	position: absolute;
 	border-radius: 50%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
+	transition: all .5s;
+}
 
-	transition: all .5s .5s;
+.frontend-skills-item:hover {
+	transform: scale(1.8);
 }
 
 .frontend-skills-item i,
@@ -560,12 +563,14 @@ button:visited {
 	font-size: 1.1rem;
 	border-bottom: 2px solid #1abc9c;
 	margin: .4rem 0rem;
+	font-weight: 400;
 }
 
 .main-text-description {
 	font-size: .8rem;
 	padding: .2rem 0rem;
 	text-align: left;
+	color: #595858;
 }
 
 .project-btns {
@@ -575,13 +580,16 @@ button:visited {
 /* Contact page */
 
 .form-container {
+	align-self: start;
+	margin-top: 4.5rem;
+	margin-bottom: 4.5rem;
 	background-color: #e8f6f366;
 	display: flex;
 	flex-direction: column;
 	width: 50vw;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem;
+	padding: 1rem 1.5rem;
 	border-radius: 10px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
 }
@@ -606,10 +614,10 @@ input:-webkit-autofill:active {
 
 .form-input {
 	background-color: white;
-	padding: .6rem .8rem;
+	padding: .5rem .8rem;
 	font-size: .9rem;
 	width: 100%;
-	margin-bottom: .8rem;
+	margin-bottom: .45rem;
 	border: none;
 	border-bottom: 2px solid transparent;
 	font-family: inherit;
@@ -632,7 +640,7 @@ input:-webkit-autofill:active {
 
 .form-label {
 	margin-left: .8rem;
-	font-size: .7rem;
+	font-size: .6rem;
 	font-weight: 500;
 	text-align: left;
 	width: 100%;
