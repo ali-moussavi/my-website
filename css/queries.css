@@ -21,6 +21,12 @@
 	projects-page-container {
 		flex-wrap: nowrap;
 	}
+
+	.form-container {
+		align-self: start;
+		margin-top: 4.5rem;
+		margin-bottom: 4.5rem;
+	}
 }
 
 /* Small tablet to big tablet: from 768px to 1023px */
@@ -41,6 +47,13 @@
 
 	projects-page-container {
 		flex-wrap: nowrap;
+	}
+
+	.projects-scrollDown {
+		position: relative;
+		margin: 1.7rem 0rem;
+		top: 0;
+		right: 0;
 	}
 }
 

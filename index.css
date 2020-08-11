@@ -528,6 +528,11 @@ button:visited {
 }
 
 /* Projects Page */
+.projects-scrollDown {
+	font-size: .8rem;
+	color: #595858;
+}
+
 .projects-page-container {
 	flex-wrap: nowrap !important;
 	flex-direction: column;
@@ -550,7 +555,7 @@ button:visited {
 	margin-top: 7%;
 }
 
-.project-container:nth-child(5) {
+.project-container:nth-child(6) {
 	margin-bottom: 5rem;
 }
 
@@ -602,9 +607,6 @@ button:visited {
 /* Contact page */
 
 .form-container {
-	align-self: start;
-	margin-top: 4.5rem;
-	margin-bottom: 4.5rem;
 	background-color: #e8f6f366;
 	display: flex;
 	flex-direction: column;
