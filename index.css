@@ -607,6 +607,7 @@ button:visited {
 /* Contact page */
 
 .form-container {
+	position: relative;
 	background-color: #e8f6f366;
 	display: flex;
 	flex-direction: column;
@@ -616,6 +617,7 @@ button:visited {
 	padding: 1rem 1.5rem;
 	border-radius: 10px;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
+	overflow: hidden;
 }
 
 form {
@@ -757,8 +759,8 @@ footer {
 
 /* Loader animation and styles */
 
-#loader-wrapper {
-	position: fixed;
+.loader-wrapper {
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -772,7 +774,16 @@ footer {
 	transform: translateY(-100%);
 }
 
-#loader {
+.message-after-load {
+	text-align: center;
+	display: block;
+	position: relative;
+	top: 50%;
+	z-index: 3001;
+	font-size: 1.3rem;
+}
+
+.loader {
 	display: block;
 	position: relative;
 	left: 50%;
@@ -790,7 +801,7 @@ footer {
 	z-index: 3001;
 }
 
-#loader:before {
+.loader:before {
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -805,7 +816,7 @@ footer {
 	animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
-#loader:after {
+.loader:after {
 	content: "";
 	position: absolute;
 	top: 15px;

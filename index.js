@@ -1,8 +1,8 @@
 window.addEventListener('load', () => {
-	const loaderWrapper = document.getElementById('loader-wrapper');
+	const loaderWrapper = document.getElementById('loader-wrapper1');
 	loaderWrapper.classList.add('loader-out');
 	setTimeout(() => {
-		const loaderWrapper = document.getElementById('loader-wrapper');
+		const loaderWrapper = document.getElementById('loader-wrapper1');
 		loaderWrapper.classList.add('display-none');
 	}, 1500);
 });
@@ -163,12 +163,69 @@ const onScroll = () => {
 	}
 };
 
+const renderLoadingAnim = () => {
+	const loaderWrapper = document.getElementById('loader-wrapper2');
+	loaderWrapper.classList.remove('loader-out');
+};
+
+const showMessage = (validity = false) => {
+	const loaderWrapper = document.getElementById('loader-wrapper2');
+	loaderWrapper.children[0].remove();
+
+	const message = document.createElement('div');
+	message.classList.add('message-after-load');
+	if (validity) {
+		message.innerHTML =
+			'Your message was sent succesfully <i class="fas fa-check-circle" style="color:#1abc9c"></i>';
+	} else {
+		message.innerHTML =
+			'An error ocurred! Please try to send you message again <i class="fas fa-times-circle style="color:#990000 ""></i>';
+	}
+
+	loaderWrapper.append(message);
+};
+
+const removeLoadingAnim = () => {
+	const loaderWrapper = document.getElementById('loader-wrapper2');
+	loaderWrapper.classList.add('loader-out');
+};
+
+const onSubmit = async (event) => {
+	event.preventDefault();
+	renderLoadingAnim();
+	const body = {
+		name: event.target[0].value,
+		email: event.target[1].value,
+		message: event.target[2].value
+	};
+	try {
+		const response = await axios.post('http://127.0.0.1:3000/send', body);
+		if (response.status == '200') {
+			showMessage(true);
+		} else {
+			showMessage(false);
+		}
+		console.log(response);
+		setTimeout(() => {
+			removeLoadingAnim();
+		}, 1500);
+	} catch (error) {
+		showMessage(false);
+		console.log(error);
+		setTimeout(() => {
+			removeLoadingAnim();
+		}, 1500);
+	}
+};
+
 initialLoad();
 window.onhashchange = hashChangeHandler;
 
 const pageContainerArray = document.querySelectorAll('.pageContainer');
 
 pageContainerArray.forEach((pagecontainer) => {
-	console.log(pagecontainer);
 	pagecontainer.addEventListener('scroll', onScroll);
 });
+
+const contactForm = document.querySelector('form');
+contactForm.addEventListener('submit', onSubmit);

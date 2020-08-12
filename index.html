@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./css/queries.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
     <script src="./index.js" defer></script>
     <script src="https://kit.fontawesome.com/650e805292.js" crossorigin="anonymous" defer></script>
     <title>Ali Moussavi</title>
@@ -16,8 +17,8 @@
 </head>
 
 <body>
-    <div id="loader-wrapper">
-        <div id="loader"></div>
+    <div class="loader-wrapper" id="loader-wrapper1">
+        <div class="loader" id="loader1"></div>
     </div>
     <header class="navbar">
         <div class="logo">
@@ -420,13 +421,17 @@
                         </div>
 
                         <div class="form-container">
+                            <div class="loader-wrapper loader-out" id="loader-wrapper2"
+                                style="background-color: #ffffffe3;">
+                                <div class="loader" id="loader1"></div>
+                            </div>
                             <div style="width: 100%;">
                                 <h1 class="gradient-text">LET'S TALK</h1>
                             </div>
                             <div style="width: 100%; color: #595858; margin-bottom: .5rem;">
                                 <h3>Send me a message and I'll get back to you as soon as I can</h3>
                             </div>
-                            <form action="#" class="form">
+                            <form class="form">
                                 <div class="form-group">
                                     <input type="text" id="name" class="form-input" placeholder="Your Name" required>
                                     <label for="name" class="form-label">Your Name</label>
