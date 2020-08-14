@@ -199,7 +199,10 @@ const onSubmit = async (event) => {
 		message: event.target[2].value
 	};
 	try {
-		const response = await axios.post('http://127.0.0.1:3000/send', body);
+		const response = await axios.post(
+			'https://contactform-handler.herokuapp.com/send',
+			body
+		);
 		if (response.status == '200') {
 			showMessage(true);
 		} else {

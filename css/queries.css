@@ -8,6 +8,13 @@
 		margin-top: 10%;
 	}
 
+	.skills-page-container {
+		align-items: flex-start;
+		align-content: flex-start;
+		padding-top: 6rem;
+		padding-bottom: 7rem;
+	}
+
 	.header-image {
 		width: 100%;
 		height: auto;
@@ -119,6 +126,9 @@
 	}
 
 	.skills-page-container {
+		padding: 0px;
+		align-content: center;
+		align-items: center;
 		flex-direction: column;
 		flex-wrap: nowrap;
 		justify-content: flex-start;

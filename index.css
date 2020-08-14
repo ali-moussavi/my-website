@@ -520,6 +520,12 @@ button:visited {
 	transform: scale(1);
 }
 
+.frontend-skills-item:hover,
+.other-skills-item:hover,
+.backend-skills-item:hover {
+	box-shadow: 0 18px 32px rgba(0, 0, 0, 0.185);
+}
+
 .frontend-skills-item i,
 .backend-skills-item i,
 .other-skills-item i {
@@ -552,7 +558,7 @@ button:visited {
 }
 
 .project-container:nth-child(3) {
-	margin-top: 7%;
+	margin-top: 4.5rem;
 }
 
 .project-container:nth-child(6) {
