@@ -87,6 +87,10 @@
 		flex-basis: 70vw;
 	}
 
+	.navbar {
+		height: 65px;
+	}
+
 	.hamburger {
 		display: flex;
 		justify-content: center;
@@ -95,7 +99,7 @@
 		flex-direction: column;
 		cursor: pointer;
 		right: 5%;
-		top: 70%;
+		top: 50%;
 		transform: translate(-5%, -50%);
 		z-index: 2;
 		transition: all 0.7s ease;
