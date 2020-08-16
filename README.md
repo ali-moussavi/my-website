@@ -1,3 +1,3 @@
-# my-website
+# my personal website
 
-https://ali-moussavi.github.io/my-website/
+alimoussavi.dev
