@@ -686,17 +686,6 @@ input:-webkit-autofill:active {
 	margin-top: 1.2rem;
 }
 
-.pagesCube__content--about {
-}
-
-.pagesCube__content--skills {
-}
-
-.pagesCube__content--projects {
-}
-.pagesCube__content--contact {
-}
-
 .exitToLeft {
 	transform-origin: 100% 50%;
 	animation: cubeLeftOut .8s ease-in both;
