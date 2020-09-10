@@ -152,7 +152,16 @@
 	}
 
 	.project-info {
-		width: 18rem;
+		width: 19rem;
+	}
+
+	.project-description {
+		width: auto;
+	}
+
+	.project-img {
+		width: 20rem;
+		padding: .5rem;
 	}
 
 	.project-container:nth-child(3) {
@@ -165,7 +174,7 @@
 }
 
 /* Small phones: from 0 to 480px */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 400px) {
 	html,
 	body {
 		font-size: 13px;
@@ -182,5 +191,18 @@
 
 	.btn-container {
 		margin-bottom: 3rem;
+	}
+
+	.project-info {
+		width: 20rem;
+	}
+
+	.project-description {
+		width: auto;
+	}
+
+	.project-img {
+		width: 20rem;
+		padding: .5rem;
 	}
 }

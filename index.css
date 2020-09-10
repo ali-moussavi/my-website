@@ -577,10 +577,11 @@ button:visited {
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
+	width: 75vw;
 }
 
 .project-img {
-	width: 20rem;
+	width: 70%;
 	padding: .5rem;
 }
 
@@ -588,7 +589,8 @@ button:visited {
 	align-self: flex-start;
 	display: flex;
 	flex-direction: column;
-	width: 15rem;
+	padding: 0rem .5rem;
+	width: 30%;
 }
 
 .about-project-title {
@@ -600,7 +602,7 @@ button:visited {
 }
 
 .main-text-description {
-	font-size: .8rem;
+	font-size: .9rem;
 	padding: .2rem 0rem;
 	text-align: left;
 	color: #595858;
