@@ -161,7 +161,7 @@
 
 	.project-img {
 		width: 20rem;
-		padding: .5rem;
+		padding: .5rem 0rem;
 	}
 
 	.project-container:nth-child(3) {
@@ -203,6 +203,6 @@
 
 	.project-img {
 		width: 20rem;
-		padding: .5rem;
+		padding: .5rem 0rem;
 	}
 }
