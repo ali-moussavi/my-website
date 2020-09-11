@@ -593,6 +593,12 @@ button:visited {
 	width: 30%;
 }
 
+.used-tech {
+	color: #1abc9c;
+	font-size: 1.5rem;
+	margin-right: .4rem;
+}
+
 .about-project-title {
 	width: 10rem;
 	font-size: 1.1rem;
