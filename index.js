@@ -48,9 +48,7 @@ const gotoRightPage = (currentPage, targetPageClassname) => {
 	currentPage.classList.add('exitToLeft');
 	currentPage.classList.remove('currentPage');
 
-	const targetPage = document.querySelector(
-		`.pagesCube__content--${targetPageClassname}`
-	);
+	const targetPage = document.querySelector(`.pagesCube__content--${targetPageClassname}`);
 	targetPage.classList.add('enterFromRight', 'currentPage');
 	targetPage.classList.remove('display-none');
 	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 803);
@@ -59,9 +57,7 @@ const gotoRightPage = (currentPage, targetPageClassname) => {
 const gotoLeftPage = (currentPage, targetPageClassname) => {
 	currentPage.classList.add('exitToRight');
 	currentPage.classList.remove('currentPage');
-	const targetPage = document.querySelector(
-		`.pagesCube__content--${targetPageClassname}`
-	);
+	const targetPage = document.querySelector(`.pagesCube__content--${targetPageClassname}`);
 	targetPage.classList.add('enterFromLeft', 'currentPage');
 	targetPage.classList.remove('display-none');
 	setTimeout(removeUnnecessaryClassesHandler.bind(this, currentPage, targetPage), 803);
@@ -110,6 +106,7 @@ const hashChangeHandler = (event) => {
 			break;
 		case '#projects':
 			pageNum = '3';
+
 			break;
 		case '#contact':
 			pageNum = '4';
@@ -124,9 +121,7 @@ const initialLoad = () => {
 	let pageId;
 	if (window.location.hash) {
 		pageId = window.location.hash.slice(1) + 'Page';
-		const currentActiveNavItem = document.querySelector(
-			`${window.location.hash}Nav div`
-		);
+		const currentActiveNavItem = document.querySelector(`${window.location.hash}Nav div`);
 		currentActiveNavItem.classList.add('navbar-item-active');
 	} else {
 		pageId = 'aboutPage';
@@ -199,10 +194,7 @@ const onSubmit = async (event) => {
 		message: event.target[2].value
 	};
 	try {
-		const response = await axios.post(
-			'https://contactform-handler.herokuapp.com/send',
-			body
-		);
+		const response = await axios.post('https://contactform-handler.herokuapp.com/send', body);
 		if (response.status == '200') {
 			showMessage(true);
 		} else {

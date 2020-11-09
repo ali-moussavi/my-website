@@ -55,13 +55,6 @@
 	projects-page-container {
 		flex-wrap: nowrap;
 	}
-
-	.projects-scrollDown {
-		position: relative;
-		margin: 1.7rem 0rem;
-		top: 0;
-		right: 0;
-	}
 }
 
 /* Small phones to small tablets: from 481px to 767px */

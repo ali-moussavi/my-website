@@ -214,20 +214,12 @@ button:visited {
 .btn-primary {
 	font-size: .8rem;
 	color: #fff;
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
 }
 
 .btn-wrapper {
 	display: inline-block;
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	border-radius: 5px;
 	padding: 2px;
 	margin: 0px 10px;
@@ -277,11 +269,7 @@ button:visited {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	left: 0;
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
@@ -293,11 +281,7 @@ button:visited {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	bottom: -7%;
 	left: 0;
 	-webkit-transform-origin: left;
@@ -324,11 +308,7 @@ button:visited {
 
 /*Styling Hamburger Icon*/
 .hamburger div {
-	background: linear-gradient(
-		90deg,
-		rgba(21, 135, 114, 1) 0%,
-		rgba(51, 208, 148, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(21, 135, 114, 1) 0%, rgba(51, 208, 148, 1) 100%);
 	width: 30px;
 	height: 3px;
 
@@ -376,11 +356,7 @@ button:visited {
 }
 
 .gradient-text {
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -535,8 +511,12 @@ button:visited {
 
 /* Projects Page */
 .projects-scrollDown {
+	margin-top: 4rem;
 	font-size: .8rem;
 	color: #595858;
+	transition: all .5s;
+	transition-delay: .5s;
+	animation: makeItBigger 2s 1s infinite;
 }
 
 .projects-page-container {
@@ -550,7 +530,7 @@ button:visited {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1.5rem;
+	padding: 1rem .5rem;
 	background-color: white;
 	margin: 1.5rem;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
@@ -581,7 +561,7 @@ button:visited {
 }
 
 .project-img {
-	width: 70%;
+	width: 50%;
 	padding: .5rem;
 }
 
@@ -590,13 +570,13 @@ button:visited {
 	display: flex;
 	flex-direction: column;
 	padding: 0rem .5rem;
-	width: 30%;
+	width: 50%;
 }
 
 .used-tech {
 	color: #1abc9c;
 	font-size: 1.5rem;
-	margin-right: .4rem;
+	margin-right: .3rem;
 }
 
 .about-project-title {
@@ -608,7 +588,7 @@ button:visited {
 }
 
 .main-text-description {
-	font-size: .9rem;
+	font-size: .8rem;
 	padding: .2rem 0rem;
 	text-align: left;
 	color: #595858;
@@ -917,6 +897,16 @@ footer {
 	}
 }
 
+@keyframes makeItBigger {
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 /* button effects */
 
 /* Grow Shadow */
@@ -964,11 +954,7 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(
-		90deg,
-		rgba(16, 117, 98, 1) 0%,
-		rgba(26, 188, 156, 1) 100%
-	);
+	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
 	-webkit-transform: scaleX(0);
 	transform: scaleX(0);
 	-webkit-transform-origin: 0 50%;
