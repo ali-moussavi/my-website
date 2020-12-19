@@ -109,7 +109,7 @@
 		flex-direction: column;
 		clip-path: circle(0px at 100% 0%);
 		-webkit-clip-path: circle(0px at 100% 0%);
-		transition: all .6s ease-out;
+		transition: all 0.6s ease-out;
 		pointer-events: none;
 	}
 
@@ -154,7 +154,7 @@
 
 	.project-img {
 		width: 20rem;
-		padding: .5rem 0rem;
+		padding: 0.5rem 0rem;
 	}
 
 	.project-container:nth-child(3) {
@@ -163,6 +163,14 @@
 
 	.form-container {
 		width: 70vw;
+	}
+
+	.arrow-right {
+		right: 5%;
+	}
+
+	.arrow-left {
+		left: 4%;
 	}
 }
 
@@ -196,6 +204,14 @@
 
 	.project-img {
 		width: 20rem;
-		padding: .5rem 0rem;
+		padding: 0.5rem 0rem;
+	}
+
+	.arrow-right {
+		right: 5%;
+	}
+
+	.arrow-left {
+		left: 4%;
 	}
 }

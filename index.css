@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 @font-face {
 	font-family: Halfomania;
 	src: url(/assets/fonts/Halfomania-Regular.ttf);
@@ -20,7 +20,7 @@ html,
 body {
 	background-color: rgb(165, 163, 163);
 	color: #212121;
-	font-family: 'Poppins', 'Arial', sans-serif;
+	font-family: "Poppins", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
@@ -34,7 +34,7 @@ body {
 
 /* ScrollBar apearence */
 ::-webkit-scrollbar {
-	width: .4rem;
+	width: 0.4rem;
 }
 
 /* Track */
@@ -83,7 +83,7 @@ h2 {
 }
 
 h3 {
-	font-size: .9rem;
+	font-size: 0.9rem;
 }
 
 .display-none {
@@ -164,12 +164,12 @@ h3 {
 	margin-top: -100px;
 	left: 50%;
 	margin-left: -35px;
-	transition: all .5s;
+	transition: all 0.5s;
 	justify-content: center;
 }
 
 .arrow-text:hover {
-	transform: translateY(1.8rem);
+	transform: translateY(2.5rem);
 	opacity: 1;
 }
 
@@ -193,7 +193,7 @@ h3 {
 button {
 	outline: none;
 	border-style: none;
-	font-family: 'Poppins', 'Arial', sans-serif;
+	font-family: "Poppins", "Arial", sans-serif;
 }
 
 button:visited {
@@ -207,26 +207,34 @@ button:visited {
 	display: inline-block;
 	cursor: pointer;
 	border-radius: 5px;
-	padding: .5rem;
+	padding: 0.5rem;
 	text-transform: uppercase;
 }
 
 .btn-primary {
-	font-size: .8rem;
+	font-size: 0.8rem;
 	color: #fff;
-	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
 }
 
 .btn-wrapper {
 	display: inline-block;
-	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
 	border-radius: 5px;
 	padding: 2px;
 	margin: 0px 10px;
 }
 
 .btn-secondary {
-	font-size: .8rem;
+	font-size: 0.8rem;
 	color: rgba(16, 117, 98, 1);
 	background-color: #fff;
 }
@@ -248,12 +256,12 @@ button:visited {
 	left: 0;
 	height: auto;
 	z-index: 2000;
-	padding: .5rem .5rem;
-	transition: all .5s;
+	padding: 0.5rem 0.5rem;
+	transition: all 0.5s;
 }
 
 .navbar-sticky {
-	background-color: rgba(255, 255, 255, .98);
+	background-color: rgba(255, 255, 255, 0.98);
 	box-shadow: 0 2px 2px #efefef;
 }
 
@@ -265,11 +273,15 @@ button:visited {
 }
 
 .navbar__items li a::after {
-	content: '';
+	content: "";
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
 	left: 0;
 	transform: scaleX(0);
 	transition: all 0.5s;
@@ -279,12 +291,16 @@ button:visited {
 	position: absolute;
 	width: 100%;
 	height: 2px;
-	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
 	bottom: -7%;
 	left: 0;
 	transform-origin: left;
 	transform: scaleX(0);
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .navbar-item-active {
@@ -303,7 +319,11 @@ button:visited {
 
 /*Styling Hamburger Icon*/
 .hamburger div {
-	background: linear-gradient(90deg, rgba(21, 135, 114, 1) 0%, rgba(51, 208, 148, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(21, 135, 114, 1) 0%,
+		rgba(51, 208, 148, 1) 100%
+	);
 	width: 30px;
 	height: 3px;
 
@@ -337,7 +357,7 @@ button:visited {
 }
 
 .navbar__items--item {
-	margin: .5rem;
+	margin: 0.5rem;
 	cursor: pointer;
 }
 
@@ -346,19 +366,23 @@ button:visited {
 	font-size: 2.5rem;
 
 	cursor: pointer;
-	margin-left: .4rem;
-	margin-top: .4rem;
+	margin-left: 0.4rem;
+	margin-top: 0.4rem;
 }
 
 .gradient-text {
-	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .logo-text {
-	font-family: 'Neucha';
-	margin-left: .2rem;
+	font-family: "Neucha";
+	margin-left: 0.2rem;
 }
 
 .fluid-container {
@@ -456,7 +480,7 @@ button:visited {
 	background-color: white;
 	height: 5rem;
 	width: 5rem;
-	font-size: .7rem;
+	font-size: 0.7rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -464,7 +488,7 @@ button:visited {
 	position: absolute;
 	border-radius: 50%;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .skills-item-hover-container {
@@ -483,7 +507,7 @@ button:visited {
 	border-radius: 50%;
 	transform: scale(0);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.185);
-	transition: all .5s;
+	transition: all 0.5s;
 }
 
 .frontend-skills-item:hover .skills-item-hover,
@@ -508,10 +532,10 @@ button:visited {
 /* Projects Page */
 .projects-scrollDown {
 	margin-top: 4rem;
-	font-size: .8rem;
+	font-size: 0.8rem;
 	color: #595858;
-	transition: all .5s;
-	transition-delay: .5s;
+	transition: all 0.5s;
+	transition-delay: 0.5s;
 	-webkit-animation: makeItBigger 2s 1s infinite;
 	animation: makeItBigger 2s 1s infinite;
 }
@@ -527,11 +551,11 @@ button:visited {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem .5rem;
+	padding: 1rem 0.5rem;
 	background-color: white;
 	margin: 1.5rem;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
-	border-radius: .6rem;
+	border-radius: 0.6rem;
 }
 
 .project-container:nth-child(3) {
@@ -544,7 +568,7 @@ button:visited {
 
 .project-title {
 	font-size: 1.5rem;
-	padding-bottom: .5rem;
+	padding-bottom: 0.5rem;
 	font-weight: 500;
 }
 
@@ -559,34 +583,34 @@ button:visited {
 
 .project-img {
 	width: 50%;
-	padding: .5rem;
+	padding: 0.5rem;
 }
 
 .project-description {
 	align-self: flex-start;
 	display: flex;
 	flex-direction: column;
-	padding: 0rem .5rem;
+	padding: 0rem 0.5rem;
 	width: 50%;
 }
 
 .used-tech {
 	color: #1abc9c;
 	font-size: 1.5rem;
-	margin-right: .3rem;
+	margin-right: 0.3rem;
 }
 
 .about-project-title {
 	width: 10rem;
 	font-size: 1.1rem;
 	border-bottom: 2px solid #1abc9c;
-	margin: .4rem 0rem;
+	margin: 0.4rem 0rem;
 	font-weight: 400;
 }
 
 .main-text-description {
-	font-size: .8rem;
-	padding: .2rem 0rem;
+	font-size: 0.8rem;
+	padding: 0.2rem 0rem;
 	text-align: left;
 	color: #595858;
 }
@@ -632,15 +656,15 @@ input:-webkit-autofill:active {
 
 .form-input {
 	background-color: white;
-	padding: .5rem .8rem;
-	font-size: .9rem;
+	padding: 0.5rem 0.8rem;
+	font-size: 0.9rem;
 	width: 100%;
-	margin-bottom: .45rem;
+	margin-bottom: 0.45rem;
 	border: none;
 	border-bottom: 2px solid transparent;
 	font-family: inherit;
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.185);
-	transition: all .5s;
+	transition: all 0.5s;
 	border-radius: 5px;
 }
 
@@ -657,13 +681,13 @@ input:-webkit-autofill:active {
 }
 
 .form-label {
-	margin-left: .8rem;
-	font-size: .6rem;
+	margin-left: 0.8rem;
+	font-size: 0.6rem;
 	font-weight: 500;
 	text-align: left;
 	width: 100%;
-	margin-bottom: .2rem;
-	transition: all .3s;
+	margin-bottom: 0.2rem;
+	transition: all 0.3s;
 }
 
 .form-btn-container {
@@ -672,26 +696,26 @@ input:-webkit-autofill:active {
 
 .exitToLeft {
 	transform-origin: 100% 50%;
-	-webkit-animation: cubeLeftOut .8s ease-in both;
-	animation: cubeLeftOut .8s ease-in both;
+	-webkit-animation: cubeLeftOut 0.8s ease-in both;
+	animation: cubeLeftOut 0.8s ease-in both;
 }
 
 .exitToRight {
 	transform-origin: 0% 50%;
-	-webkit-animation: cubeRightOut .8s ease-in both;
-	animation: cubeRightOut .8s ease-in both;
+	-webkit-animation: cubeRightOut 0.8s ease-in both;
+	animation: cubeRightOut 0.8s ease-in both;
 }
 
 .enterFromRight {
 	transform-origin: 0% 50%;
-	-webkit-animation: cubeLeftIn .8s ease-in both;
-	animation: cubeLeftIn .8s ease-in both;
+	-webkit-animation: cubeLeftIn 0.8s ease-in both;
+	animation: cubeLeftIn 0.8s ease-in both;
 }
 
 .enterFromLeft {
 	transform-origin: 100% 50%;
-	-webkit-animation: cubeRightIn .8s ease-in both;
-	animation: cubeRightIn .8s ease-in both;
+	-webkit-animation: cubeRightIn 0.8s ease-in both;
+	animation: cubeRightIn 0.8s ease-in both;
 }
 
 footer {
@@ -710,23 +734,23 @@ footer {
 }
 .footer-icons i {
 	cursor: pointer;
-	transition: all .3s;
+	transition: all 0.3s;
 }
 
 .footer-icons i:nth-child(1) {
-	padding: .4rem .5rem;
+	padding: 0.4rem 0.5rem;
 	background-color: #4e545a;
 	border-radius: 8px 0px 0px 0px;
 }
 
 .footer-icons i:nth-child(2) {
-	padding: .4rem .6rem;
+	padding: 0.4rem 0.6rem;
 	background-color: #0077ba;
 }
 
 .footer-icons i:nth-child(3) {
 	background-color: #4fce5d;
-	padding: .4rem .6rem;
+	padding: 0.4rem 0.6rem;
 	border-radius: 0px 8px 0px 0px;
 }
 
@@ -752,7 +776,7 @@ footer {
 	height: 100%;
 	z-index: 3000;
 	background-color: #313131;
-	transition: transform .8s ease-in;
+	transition: transform 0.8s ease-in;
 }
 
 .loader-out {
@@ -1022,7 +1046,11 @@ footer {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(90deg, rgba(16, 117, 98, 1) 0%, rgba(26, 188, 156, 1) 100%);
+	background: linear-gradient(
+		90deg,
+		rgba(16, 117, 98, 1) 0%,
+		rgba(26, 188, 156, 1) 100%
+	);
 	transform: scaleX(0);
 	transform-origin: 0 50%;
 	transition-property: transform;
