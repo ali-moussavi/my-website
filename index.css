@@ -622,6 +622,9 @@ button:visited {
 /* Contact page */
 
 .form-container {
+	align-self: start;
+	margin-top: 4.5rem;
+	margin-bottom: 4.5rem;
 	position: relative;
 	background-color: #e8f6f366;
 	display: flex;
