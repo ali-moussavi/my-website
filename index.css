@@ -180,10 +180,10 @@ h3 {
 	background-clip: text;
 	background-size: 200% auto;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: gradientMovingText 4s infinite forwards;
-	animation: gradientMovingText 4s infinite forwards;
+	-webkit-animation: gradientMovingText 3s infinite forwards;
+	animation: gradientMovingText 3s infinite forwards;
 	-webkit-animation-delay: 3s;
-	animation-delay: 3s;
+	animation-delay: 1s;
 }
 
 .text-secondary {
