@@ -1,3 +1,3 @@
 # my personal website
 
-https://www.alimoussavi.dev/
+https://ali-moussavi.github.io/my-website/
